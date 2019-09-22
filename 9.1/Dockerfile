@@ -1,4 +1,4 @@
-FROM python:2.7.16-slim-stretch
+FROM python:2.7.16-alpine3.10
 
 # add our user and group first to make sure their IDs get assigned consistently
 RUN groupadd -r sentry && useradd -r -m -g sentry sentry
